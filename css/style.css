@@ -1,0 +1,867 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html{
+    font-size: 15px;
+    scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    margin: 0rem;
+    padding: 0rem;
+}
+
+p{
+    margin: 0rem;
+    padding: 0rem; 
+}
+
+button{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ul{
+    margin: 0rem;
+    padding: 0rem;
+}
+
+li{
+    margin: 0rem;
+    padding: 0rem;
+    list-style: none;
+}
+
+.max{
+    max-width: 1300px;
+    padding: 1.5rem 0.5rem;
+    margin: 0 auto;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-flow: nowrap;
+}
+
+/* navigation start here */
+
+nav{
+    width: 100%;
+    background-color: #ffffff;
+    position: fixed;
+    transition: 500ms ease-out;
+    z-index: 10;
+}
+
+.logo{
+    width: 35%;
+}
+
+.logo a{
+    font-size: 4rem;
+    text-decoration: none;
+    font-weight: 600;
+    color: #000;
+}
+
+.logo a:hover{
+    color: #000;
+    text-decoration: none;
+}
+
+.navi{
+    width: 40%;
+    text-align: center;
+}
+
+.navi .fa{
+    display: none;
+}
+
+.navi ul {
+    margin: 0rem;
+}
+
+.navi ul li a{
+    font-size: 1.5rem;
+    text-decoration: none;
+    font-weight: 400;
+    color: #000;
+    line-height: 3rem;
+}
+
+.icons{
+    width: 15%;
+    text-align: right;
+}
+
+.change{
+    box-shadow: 1px 0px 10px 1px #000;
+}
+
+.icons .fa{
+    text-align: right;
+    font-size: 2rem;
+    margin-left: 1rem;
+    padding: 1rem;
+    border: 1px solid #000;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: 500ms;
+}
+
+.icons .fa:hover{
+    background-color: red;
+}
+
+#menuBar{
+    width: 50px;
+    transition: 1s;
+    padding: 0.5rem;
+    border: 1px solid #000;
+    cursor: pointer;
+    display: none;
+}
+
+.icon-bar{
+    display: block;
+    width: 80%;
+    height: 4px;
+    background-color: #000;
+    margin: 5px auto;
+    transition: 1s;
+}
+
+
+/* banner start here */
+
+.banner{
+    width: 100%;
+    background-color: #cacaca;
+    padding-top: 10rem;
+
+}
+
+#myCarousel{
+    position: relative;
+}
+
+#myCarousel ol{
+    z-index: 1;
+}
+
+#indi li{
+    border: 3px solid #000;
+    padding: 0.4rem;
+    transition: 500ms ;
+}
+
+#indi li:hover{
+    background-color: #000;
+    transform: scale(1.1);
+}
+
+#myCarousel .left, #myCarousel .right{
+    background: transparent;
+}
+
+#myCarousel .left{
+    position: absolute;
+    left: -15%;
+}
+
+
+#myCarousel .right{
+    position: absolute;
+    right: -15%;
+}
+
+#myCarousel .glyphicon{
+    color: #000;
+    cursor: pointer;
+    transition: 500ms;
+    
+}
+
+#myCarousel .glyphicon:hover{
+    background-color: #000;
+    border-radius: 50%;
+    color: #fff;
+}
+
+.box-item{
+    display: flex;
+}
+
+.banner-box{
+    width: 50%;
+}
+
+.banner-box1{
+    width: 50%;
+    padding-top: 12rem;
+}
+
+.banner-box1 h4{
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 3rem;
+}
+
+.banner-box1 h1{
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+.banner-box1 h3{
+    font-size: 1.5rem;
+    font-weight: 200;
+    margin-bottom: 5rem;
+}
+
+.shop-btn{
+    width: 150px;
+    height: 50px;
+    background-color: #000;
+    color: #fff;
+    border: 0;
+    font-size: 1.5rem;
+    font-weight: 500;
+    transition: 500ms;
+}
+
+.shop-btn:hover{
+    border: 2px solid #000;
+    color: #000;
+    background-color: #fff;
+}
+
+.banner-box{
+    width: 50%;
+    text-align: right;
+}
+
+.banner-box img{
+    width: 70%;
+}
+
+
+/* two box section start here */
+
+.phone-section{
+    padding: 3rem;
+    text-align: left;
+}
+
+.phone{
+    width: 48%;
+    background-color: #cacaca;
+    padding: 2rem;
+}
+
+
+
+
+.phone-box{
+    width: 50%;
+}
+.phone-box .six {
+    width: 61%;
+}
+.phone-box img{
+    width: 50%;
+}
+
+.phone-box h5{
+    font-size: 1.5rem;
+    font-size: 200;
+    margin-bottom: 1.2rem;
+}
+
+.phone-box h1{
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+
+}
+
+
+
+
+/* latest box section */
+.latest-had{
+    width: 100%;
+    background-color: #cacaca;
+    text-align: center;
+    padding: 0.8rem 1rem;
+}
+
+.latest-had input{
+    width: 15px;
+    height: 15px;
+    margin-right: 0.5rem;
+    border: 0px;
+    cursor: pointer;
+    
+}
+
+.fa-arrow-left, .fa-arrow-right{
+    margin-top: 3rem;
+    border: 1px solid #dadada;
+    padding: 1.5rem;
+    cursor: pointer;
+}
+
+
+.latest-had span{
+    font-size: 2rem;
+    font-weight: 500;
+    margin-left: 0.5rem;
+}
+
+.product-dett{
+    padding-top: 2rem;
+}
+
+.product-dett .product-box{
+    width: 95%;
+    border: 1px solid #cacacc;
+    padding: 1.5rem;
+    text-align: center;
+    position: relative;
+    align-items: center;
+}
+
+.hover{
+    position: absolute;
+    width: 80%;
+    top: 32%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(255, 255, 255, 0.479) ;
+    padding: 1rem;
+    opacity: 0;
+    transition: 500ms;
+    
+}
+
+.hover .fa{
+    display: inline;
+    font-size: 2rem;
+    cursor: pointer;
+    background-color: rgba(246, 74, 74, 0.835);
+    padding: 1rem;
+    color: #fff;
+    line-height: 30px;
+
+}
+
+.product-box:hover .hover{
+    opacity: 1;
+    animation: hov 500ms 1;
+}
+
+@keyframes hov{
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        width: 1;
+    }
+}
+
+.full-width{
+    width: 100%;
+}
+
+.product-box img{
+    width: 80%;
+}
+
+.product-box h3{
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.product-box span{
+    color: #616102;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.product-box p{
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.add{
+    display: block;
+    width: 100%;
+    height: 50px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    outline: none;
+    border:  1px solid #cacacc;
+}
+
+.add:hover{
+    background-color: #000;
+    color: #fff;
+}
+
+/* product start */
+
+.product-top{
+    width: 100%;
+    background-color: #cacaca;
+    text-align: center;
+    padding: 0.8rem 1rem;
+}
+
+.product-top input{
+    margin-left: 0.9rem;
+    cursor: pointer;
+}
+
+.product-top span{
+    font-size: 2rem;
+    font-weight: 500;
+    margin-left: 0.9rem;
+    margin-right: 0.9rem;
+    cursor: pointer;
+}
+
+.width-box{
+    margin-top: 8rem;
+    text-align: center;
+}
+
+#allProduct{
+    display: none;
+}
+
+#apple{
+    display: none;
+}
+
+#head{
+    display: none;
+}
+
+#sums{
+    display: none;
+}
+
+/* shopping  */
+
+.full-box{
+    width: 100%;
+    background-color: #cacaca;
+    padding: 2rem 1rem;
+    text-align: center;
+    line-height: 5rem;
+}
+
+.ship{
+    width: 24%;
+}
+
+.ship p{
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin-top: 2rem;
+}
+
+.ship-r span{
+    font-size: 3rem;
+    border: 1px solid #fff ;
+    padding: 2rem;
+    background-color: #fff;
+    cursor: pointer;
+    transition: 500ms;
+}
+
+.ship-r span:hover{
+    transform:rotateY(-180deg) ;
+}
+
+
+/* news box */
+
+.news{
+    width: 100%;
+    background-color: #fff;
+    padding: 3rem 0rem;
+    border-bottom: 1px solid #cacaca;
+}
+
+.news-b{
+    width: 100%;
+    background-color: #dadada;
+    padding: 1rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    
+}
+
+.news-b h3{
+    font-size: 2.5rem;
+    font-weight: 700;
+
+}
+
+.news-box{
+    width: 32%;
+    background-color: #dadada;
+    
+}
+
+.news-box img{
+    width: 100%;
+}
+
+.news-box h2{
+    font-size: 3rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    padding: 0rem 0.8rem;
+}
+
+.news-box h6{
+    font-size: 1.5rem;
+    color: #000000;
+    padding: 0rem 0.8rem;
+}
+
+.news-box p{
+    font-size: 1.5r;
+    font-weight: 300;
+    line-height: 2rem;
+    margin-bottom: 3rem;
+    padding: 0rem 0.8rem;
+}
+
+
+/* sub box */
+
+.subscribe{
+    width: 100%;
+    padding: 3rem 0rem;
+}
+
+.sub-1{
+    width: 50%;
+    text-align: left;
+}
+
+.sub-1 h1{
+    font-size: 3r;
+    font-weight: 500;
+    margin-bottom: 2rem;
+}
+
+.sub-1 p{
+    font-size: 1.5rem;
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+
+.sub-1 input{
+    margin-left: 5rem;
+    width: 70%;
+    height: 50px;
+    padding: 1rem;
+    border: 0;
+    outline: none;
+    background-color: #dfdfdf;
+    font-size: 1.5rem;
+}
+
+.sub-1 input::placeholder{
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+.sbt{
+    width: 20%;
+    height: 50px;
+    border: 0;
+    font-size: 1.5rem;
+    background-color: #000;
+    color: #fff;
+}
+
+/* footer start here */
+
+footer{
+    width: 100%;
+    padding: 3rem 0rem;
+    background-color: #000;
+    color: #fff;
+}
+
+footer .flex{
+    align-items: flex-start;
+}
+
+.f-box{
+    width: 24%;
+}
+
+.f-box h3{
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+.f-box ul li{
+    font-size: 1.6rem;
+    margin-bottom: 0.9rem;
+}
+
+.f-box ul li a{
+    color: #fff;
+    transition: 500ms;
+}
+
+.f-box ul li a:hover{
+    list-style: none;
+    text-decoration: none;
+    color: red;
+}
+    
+.f-box span{
+    display: inline;
+}
+
+.f-box p{
+   font-size: 1rem; 
+}
+
+
+@media (max-width:1024px){
+    #myCarousel .left{
+        position: absolute;
+        left: 0%;
+    }
+    
+    
+    #myCarousel .right{
+        position: absolute;
+        right: 0%;
+    }
+
+    .logo{
+        width: 30%;
+    }
+
+    .icons{
+        width: 20%;
+    }
+}
+
+
+
+
+
+
+
+
+
+@media (max-width:768px){
+
+    html{
+        font-size: 10px;
+    }
+
+    .flex{
+        flex-direction: column;
+    }
+
+    .logo{
+        width: 100%;
+        text-align: center;
+    }
+
+    .icons{
+        width: 100%;
+        text-align: center;
+        margin-top: 1rem;
+    }
+
+    #menuBar{
+        display: block;
+        z-index: 10;
+    }
+
+    .navi{
+        width: 50%;
+        height: 100vh;
+        background-color: #cacaca;
+        display: block;
+        position: absolute;
+        left: -50%;
+        top: 183px;
+        transition: 1s;
+        z-index: 10;
+    }
+
+    .navi ul {
+        margin-top: 8rem;
+        flex-direction: column;
+    }
+
+    .navi ul li{
+        width: 100%;
+        margin-bottom: 0.9rem;
+    }
+
+    .navi ul li a{
+        font-size: 1.7rem;
+    }
+
+    .navi ul li a::after{
+        content: '';
+        width: 0%;
+        height: 3px;
+        display: block;
+        background-color: #000;
+        margin: 0 auto;
+        transition: 1s;
+    }
+
+    .navi ul li a:hover:after{
+        content: '';
+        width: 30%;
+    }
+
+
+    .navi .fa{
+        display: block;
+        font-size: 2.5rem;
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        cursor: pointer;
+    }
+
+    #myCarousel .left{
+        display: none;
+    }
+    
+    
+    #myCarousel .right{
+        display: none;
+    }
+
+    .phone{
+        width: 100%;
+        margin-bottom: 1rem;
+        animation: let 1 5s ;
+        animation-delay: 2s;
+        
+    }
+
+    
+
+    .phone-box{
+        width: 80%;
+        text-align: center;
+
+    }
+
+
+
+
+    .phone-box img{
+        width: 50%;
+    }
+
+    .banner-box{
+        width: 100%;
+        text-align: center
+    }
+
+    .banner-box img{
+        width: 50%;
+    }
+    
+    .banner-box1{
+        width: 100%;
+        text-align: center
+    }
+
+    .box-item{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .product-dett{
+        width: 90%;
+    }
+    .product-box{
+        width: 90%;
+        margin-bottom: 5rem;
+    }
+
+    .ship{
+        width: 90%;
+    }
+
+    .news-box{
+        width: 90%;
+        margin-bottom: 2rem;
+    }
+
+    .sub-1{
+        width: 90%;
+        margin-bottom: 4rem;
+    }
+
+    .sub-1 input{
+        margin: 0px;
+    }
+
+    .f-box{
+        width: 90%;
+        text-align: center;
+    }
+
+    footer .flex{
+        align-items: center;
+    }
+    
+}
+
+@media (max-width:681px){
+    .navi{
+        top: 182px; 
+    }
+}
+
+@media (max-width:425px){
+    html{
+        font-size: 9px;
+    }
+}
+
+@media (max-width:320px){
+    html{
+        font-size: 9px;
+    }
+}
